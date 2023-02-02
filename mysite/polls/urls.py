@@ -27,4 +27,6 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),  # still use question_id to show up 
     # path('<str:question_id>/vote/', views.vote, name='vote')
     path('specifics/<int:pk>/', views.DetailView.as_view(), name='detail'),
+    path('api/questions/', views.get_questions, name='get_questions'),
+    path('api/question/<int:pk>', views.update_question, name='update_question'),
 ]
