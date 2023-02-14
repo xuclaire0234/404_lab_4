@@ -141,7 +141,4 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
-AUTHENTICATION_BACKENDS = (
-    ('django.contrib.auth.backends.ModelBackend'),
-)
 django_on_heroku.settings(locals())
